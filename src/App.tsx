@@ -1,10 +1,18 @@
 import './App.css';
-import { Counter } from './components/typescript-basic/state/Counter';
+import Box from './components/typescript-basic/context/Box';
+import ThemeContextProvider from './components/typescript-basic/context/ThemeContext';
+import User from './components/typescript-basic/context/User';
+import UserContextProvider from './components/typescript-basic/context/UserContext';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
