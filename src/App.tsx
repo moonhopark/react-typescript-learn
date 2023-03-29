@@ -1,18 +1,12 @@
 import './App.css';
-import Box from './components/typescript-basic/context/Box';
-import ThemeContextProvider from './components/typescript-basic/context/ThemeContext';
-import User from './components/typescript-basic/context/User';
-import UserContextProvider from './components/typescript-basic/context/UserContext';
+import DomRef from './components/typescript-basic/ref/DomRef';
+import MutableRef from './components/typescript-basic/ref/MutableRef';
 
 function App() {
   return (
     <div className="App">
-      <ThemeContextProvider>
-        <Box />
-      </ThemeContextProvider>
-      <UserContextProvider>
-        <User />
-      </UserContextProvider>
+      <DomRef />
+      <MutableRef />
     </div>
   );
 }
