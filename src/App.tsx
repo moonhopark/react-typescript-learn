@@ -1,10 +1,11 @@
 import './App.css';
 import RandomNumber from './components/typescript-basic/restriction/RandomNumber';
+import Toast from './components/typescript-basic/templateliterals/Toast';
 
 function App() {
   return (
     <div className="App">
-      <RandomNumber value={10} isPositive />
+      <Toast position="center" />
     </div>
   );
 }
