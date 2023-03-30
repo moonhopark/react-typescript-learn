@@ -1,13 +1,29 @@
 import './App.css';
-import Private from './components/typescript-basic/auth/Private';
-import Profile from './components/typescript-basic/auth/Profile';
-import DomRef from './components/typescript-basic/ref/DomRef';
-import MutableRef from './components/typescript-basic/ref/MutableRef';
+import List from './components/typescript-basic/generics/List';
 
 function App() {
   return (
     <div className="App">
-      <Private isLoggedIn={true} component={Profile} />
+      <List
+        items={[
+          {
+            id: 1,
+            first: 'Bruce',
+            last: 'Wayne',
+          },
+          {
+            id: 2,
+            first: 'Clark',
+            last: 'Kent',
+          },
+          {
+            id: 3,
+            first: 'Princess',
+            last: 'Diana',
+          },
+        ]}
+        onClick={(item) => console.log(item)}
+      />
     </div>
   );
 }
