@@ -1,14 +1,18 @@
 import './App.css';
-import Button from './components/typescript-basic/html/Button';
-import RandomNumber from './components/typescript-basic/restriction/RandomNumber';
-import Toast from './components/typescript-basic/templateliterals/Toast';
+import Text from './components/typescript-basic/polymorphic/Text';
 
 function App() {
   return (
     <div className="App">
-      <Button variant="primary" onClick={() => console.log('Clicked')}>
-        Primary Button
-      </Button>
+      <Text as="h1" size="lg">
+        Heading
+      </Text>
+      <Text as="p" size="md">
+        Paragraph
+      </Text>
+      <Text as="label" htmlFor="someId" size="sm" color="secondary">
+        Label
+      </Text>
     </div>
   );
 }
